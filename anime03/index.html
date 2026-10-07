@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NEKO CAFE</title>
+    <!-- animate.css と AOS のCSSを読み込む -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ヒーロー -->
+    <header class="hero">
+        <div class="logo" data-aos="fade-down">🐱</div>
+        <h1 data-aos="fade-up">ようこそ</h1>
+        <h1 data-aos="fade-up" data-aos-delay="500">保護猫たちの</h1>
+        <h1 data-aos="fade-up" data-aos-delay="1000">癒やしの猫カフェ</h1>
+        <a href="#menu" class="btn animate__animated animate__pulse animate__infinite">メニューを見る</a>
+    </header>
+
+    <!-- 4つのブロック -->
+    <section class="block" data-aos="fade-right" data-aos-duration="1000">
+        <img src="images/block1.jpg" alt="明るい店内">
+        <h2>Fade系</h2>
+        <p>ふわっと現れる（fade-right）</p>
+    </section>
+    <section class="block" data-aos="flip-left" data-aos-duration="1000">
+        <img src="images/block2.jpg" alt="ラテアート">
+        <h2>Flip系</h2>
+        <p>くるっと回って現れる（flip-left）</p>
+    </section>
+    <section class="block" id="menu" data-aos="slide-up" data-aos-duration="1000">
+        <img src="images/block3.jpg" alt="コーヒーと豆">
+        <h2>Slide系</h2>
+        <p>すべり込んで現れる（slide-up）</p>
+    </section>
+    <section class="block" data-aos="zoom-in" data-aos-duration="1000">
+        <img src="images/block4.jpg" alt="テーブルの上の猫">
+        <h2>Zoom系</h2>
+        <p>大きくなりながら現れる（zoom-in）</p>
+    </section>
+
+    <!-- メンバー紹介（オリジナルアニメーション） -->
+    <section class="members">
+        <h2>スタッフ猫</h2>
+        <div class="member-list">
+            <div class="member" data-aos="member-rotate">
+                <img src="images/mike.jpg" alt="ミケ">
+                <p>ミケ</p>
+            </div>
+            <div class="member" data-aos="member-rotate">
+                <img src="images/tora.jpg" alt="トラ">
+                <p>トラ</p>
+            </div>
+            <div class="member" data-aos="member-rotate">
+                <img src="images/gin.jpg" alt="ギン">
+                <p>ギン</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>&copy; NEKO CAFE</footer>
+
+    <!-- AOS のJSを読み込んで、動かし始める（</body>の直前） -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true });
+    </script>
+</body>
+</html>

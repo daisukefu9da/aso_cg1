@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    color: #333333;
+    background-color: #fff8ef;
+    overflow-x: hidden;
+}
+
+/* ヒーロー：写真の上に半透明の黒を重ねて、文字を読みやすくする */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
+.logo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+.hero h1 {
+    margin: 4px 0;
+    font-size: 2.4rem;
+}
+.btn {
+    margin-top: 30px;
+    padding: 14px 36px;
+    border-radius: 999px;
+    background-color: #f07d34;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* 4つのブロック：上に写真、下に文字 */
+.block {
+    width: 80%;
+    max-width: 700px;
+    margin: 120px auto;
+    padding-bottom: 40px;
+    border-radius: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    overflow: hidden;
+}
+.block img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+}
+
+/* メンバー紹介 */
+.members {
+    padding: 80px 20px 160px;
+    text-align: center;
+}
+.member-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.member img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.member p {
+    margin: 8px 0 0;
+    font-weight: bold;
+}
+
+/* オリジナルアニメーション：発火前（見えない） */
+[data-aos="member-rotate"] {
+    opacity: 0;
+}
+/* オリジナルアニメーション：発火後（回りながら登場） */
+[data-aos="member-rotate"].aos-animate {
+    opacity: 1;
+    animation-name: spinin;
+    animation-duration: 1.5s;
+}
+@keyframes spinin {
+    0% {
+        transform: rotate(-180deg) scale(0.5);
+    }
+    50% {
+        transform: rotate(100deg) scale(1.3);
+    }
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #333333;
+    color: #ffffff;
+}
