@@ -126,6 +126,7 @@ footer {
 @media (max-width: 600px) {
     .items {
         grid-template-columns: 1fr;
+        padding: 0 24px;
     }
 }
 
