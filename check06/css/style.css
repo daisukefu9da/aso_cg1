@@ -1,0 +1,141 @@
+html {
+    font-size: 16px;
+    font-family: "Yu Mincho", "Hiragino Mincho ProN", "Noto Serif JP", serif;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0 0 0 0;
+    background-color: #F5F0E8;
+    color: #3A2E25;
+}
+p, li, td {
+    line-height: 2;
+    letter-spacing: 0.05em;
+}
+th {
+    font-weight: normal;
+}
+a:link {
+    color: #3A2E25;
+    text-decoration: none;
+}
+a:visited {
+    color: #3A2E25;
+    text-decoration: none;
+}
+a:hover {
+    color: #A0754B;
+    text-decoration: none;
+}
+a:active {
+    color: #A0754B;
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+
+.header {
+    padding-top: 40px;
+    border-bottom: 1px solid #DCCFBE;
+}
+.logo {
+    margin: 0;
+    text-align: center;
+    font-size: 1.6rem;
+    letter-spacing: 0.3em;
+}
+.nav a {
+    font-size: 0.875rem;
+    letter-spacing: 0.15em;
+}
+h1 {
+    margin: 0;
+    font-weight: normal;
+    letter-spacing: 0.2em;
+}
+
+main {
+    margin: 120px auto 120px auto;
+    max-width: 880px;
+}
+main h2 {
+    margin-top: 120px;
+    margin-bottom: 40px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #DCCFBE;
+    color: #A0754B;
+    font-size: 1.25rem;
+    font-weight: normal;
+    letter-spacing: 0.2em;
+}
+footer {
+    letter-spacing: 0.2em;
+}
+
+/* ① 参考：教科書 第8章-03〜04 p.187〜195 */
+.nav ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 56px;
+}
+
+/* ② 参考：教科書 第8章-05〜06 p.196〜205 */
+.hero {
+    padding: 220px 0;
+    background-image: url(../images/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* ③ 参考：教科書 第8章-07 p.206〜210 */
+.info {
+    width: 100%;
+    border-collapse: collapse;
+}
+.info th, .info td {
+    border-bottom: 1px solid #DCCFBE;
+    padding: 20px;
+}
+.info th {
+    width: 160px;
+    background-color: #EDE4D6;
+    text-align: left;
+}
+
+/* ④ 参考：教科書 第9章-05 p.235〜240 */
+.items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+.item {
+    padding-bottom: 16px;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+/* ⑤ 参考：教科書 第11章-03 p.281〜284／第11章-07 p.294〜296 */
+@media (max-width: 600px) {
+    .items {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ⑥ 参考：教科書 第7章-06 p.157〜158／第7章-07 p.159〜168 */
+.copyright {
+    margin: 0;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    background-color: #2B211A;
+    color: #DCCFBE;
+    text-align: center;
+    font-size: 0.75rem;
+}
